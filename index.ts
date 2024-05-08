@@ -6,18 +6,17 @@
  * @since   2024-05-08
  */
 
-/*
- * This function calculates the palindrome depth of a number
- */
+// This function calculates the palindrome depth of a number
 function PalindromeDepth(integer: number, currentDepth: number): number {
-  
-  // check if integer is palindrome
-  if (integer === integer.split('').reverse().join('')); {
-    return integer.reverse()
+  const reversedInteger: number = integer.toString().split('').reverse().join('')
+  if (integer === reversedInteger) {
+    return currentDepth
   } else {
-    return integer.reverse()
+    const sum = integer + reversedInteger
+    return PalindromeDepth(sum ,currentDepth + 1)
   }
 }
+
 
 const minInt: number = 10
 const maxInt: number = 20
