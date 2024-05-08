@@ -24,7 +24,7 @@ function PalindromeDepth(integer: number, currentDepth: number): number {
 }
 
 const minInt: number = 10
-const maxInt: number = 99
+const maxInt: number = 20
 
 for (let counter = minInt; counter <= maxInt; counter++) {
   let intDepth: number PalindromeDepth(counter, 0)
