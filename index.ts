@@ -13,7 +13,7 @@ function PalindromeDepth(integer: number, currentDepth: number): number {
   
   let reversedInteger = ""
   // reverse integer
-  for (let counter = Integer.length - 1; counter >= 0; counter--) {
+  for (let counter = integer.length - 1; counter >= 0; counter--) {
     reversedInteger += integer[counter]
   }
   // check if integer is palindrome
