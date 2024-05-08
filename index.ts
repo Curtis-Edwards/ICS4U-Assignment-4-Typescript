@@ -27,7 +27,7 @@ const minInt: number = 10
 const maxInt: number = 20
 
 for (let counter = minInt; counter <= maxInt; counter++) {
-  let intDepth: number PalindromeDepth(counter, 0)
+  let intDepth: number = PalindromeDepth(counter, 0)
   console.log(`${counter} is a depth ${intDepth} palindrome.`)
 }
 
