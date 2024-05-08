@@ -10,7 +10,7 @@
 function PalindromeDepth(integer: number, currentDepth: number): number {
   const reversedInteger: number = integer.toString().split('').reverse().join('')
   console.log(`${reversedInteger} and ${integer}`)
-  if (integer == reversedInteger) {
+  if (integer.toString() === reversedInteger.toString()) {
     return currentDepth
   } else {
     const sum = integer + reversedInteger
