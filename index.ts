@@ -12,7 +12,7 @@
 function PalindromeDepth(integer: number, currentDepth: number): number {
   
   // check if integer is palindrome
-  if (integer === integer.reverse()) {
+  if (integer === integer.split('').reverse().join('')); {
     return integer.reverse()
   } else {
     return integer.reverse()
