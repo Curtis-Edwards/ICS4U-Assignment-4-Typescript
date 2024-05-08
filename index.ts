@@ -13,7 +13,7 @@ function PalindromeDepth(integer: number, currentDepth: number): number {
   if (integer.toString() === reversedInteger.toString()) {
     return currentDepth
   } else {
-    const sum: number = integer + reversedInteger
+    const sum: number = parseInt(integer) + parseInt(reversedInteger)
     return PalindromeDepth(sum, currentDepth + 1)
   }
 }
