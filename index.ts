@@ -6,30 +6,29 @@
  * @since   2024-05-08
  */
 
-//function PalindromeDepth(Integer: number, currentDepth: number): number {
-  /*
-   * This function calculates the palindrome depth of a number
-   */
-  /*let reversedString = ""
-  let isPalindrome
-  // reverse string
-  for (let counter = string.length - 1; counter >= 0; counter--) {
-    reversedString += string[counter]
+/*
+ * This function calculates the palindrome depth of a number
+ */
+function PalindromeDepth(integer: number, currentDepth: number): number {
+  
+  let reversedInteger = ""
+  // reverse integer
+  for (let counter = Integer.length - 1; counter >= 0; counter--) {
+    reversedInteger += integer[counter]
   }
-  // check if string is palindrome (capitalization doesn't matter)
-  if (string.toLowerCase() === reversedString.toLowerCase()) {
-    isPalindrome = true
-  } else {
-    isPalindrome = false
+  // check if integer is palindrome
+  if (integer != reversedInteger) {
+    PalindromeDepth(integer + reversedInteger, currentDepth + 1)
   }
+  return currentDepth
+}
 
-  return isPalindrome
-}*/
+const minInt: number = 10
+const maxInt: number = 99
 
-const minInteger: number = 10
-const maxInteger: number = 99
-for (let counter = minInteger; counter <= maxInteger; counter++) {
-  console.log(counter)
+for (let counter = minInt; counter <= maxInt; counter++) {
+  let intDepth: number PalindromeDepth(counter, 0)
+  console.log(`${counter} is a depth ${intDepth} palindrome.`)
 }
 
 console.log("\nDone.")
