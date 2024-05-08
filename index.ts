@@ -11,16 +11,12 @@
  */
 function PalindromeDepth(integer: number, currentDepth: number): number {
   
-  let reversedInteger = ""
-  // reverse integer
-  for (let counter = integer.length - 1; counter >= 0; counter--) {
-    reversedInteger += integer[counter]
-  }
   // check if integer is palindrome
-  if (integer != reversedInteger) {
-    PalindromeDepth(integer + reversedInteger, currentDepth + 1)
+  if (integer === integer.reverse()) {
+    return integer.reverse()
+  } else {
+    return integer.reverse()
   }
-  return currentDepth
 }
 
 const minInt: number = 10
